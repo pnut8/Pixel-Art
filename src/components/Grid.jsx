@@ -294,7 +294,7 @@ export function Grid() {
 
   return (
     <>
-      <h1 className="text-7xl py-4 text-center">Pixel Art</h1>
+      <h1 className="text-6xl py-4 text-center">Pixel Art</h1>
       <div className="grid bg-base-300 p-5 mx-10 justify-center rounded-lg ring-2 overflow-hidden grid-cols-[0.9fr_1.6fr_0.9fr] gap-4">
         <div className="grid  grid-cols-[1fr_1fr] rounded-box place-items-center gap-4 p-4">
           <input
