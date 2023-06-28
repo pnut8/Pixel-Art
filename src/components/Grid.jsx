@@ -294,9 +294,9 @@ export function Grid() {
 
   return (
     <>
-      <h1 className="text-8xl py-4 text-center">Pixel Art</h1>
-      <div className="grid grid-cols-[450px_25rem_450px] bg-base-300 p-5 mx-10 justify-between rounded-lg ring-2 overflow-hidden xl:grid-cols-[450px_50rem_450px]">
-        <div className="grid grid-cols-[200px_200px] rounded-box place-items-center gap-4 p-4">
+      <h1 className="text-7xl py-4 text-center">Pixel Art</h1>
+      <div className="grid bg-base-300 p-5 mx-10 justify-center rounded-lg ring-2 overflow-hidden grid-cols-[0.9fr_1.6fr_0.9fr] gap-4">
+        <div className="grid  grid-cols-[1fr_1fr] rounded-box place-items-center gap-4 p-4">
           <input
             type="text"
             placeholder="My Drawing"
@@ -318,7 +318,7 @@ export function Grid() {
             type="color"
             // value={pixelColor}
           />
-          <label className="text-error">{colorLabel()}</label>
+          <label className="text-error whitespace-nowrap">{colorLabel()}</label>
           <div className="col-span-2 w-full">
             <div className="flex mb-2 justify-between">
               <label>Opacity</label>
@@ -395,7 +395,7 @@ export function Grid() {
           </button>
         </div>
         <div className="grid place-items-center">
-          <div className="grid-container xl:w-[50rem] lg:w-[25rem] aspect-square">
+          <div className="grid-container w-full aspect-square">
             <div className="grid-row">
               {arr.map((item) => {
                 return (
@@ -441,7 +441,7 @@ export function Grid() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-[200px_200px] rounded-box place-items-center gap-4 p-4">
+        <div className="grid grid-cols-[1fr_1fr] rounded-box place-items-center gap-4">
           <input
             id="load-file"
             className="file-input file-input-bordered file-input-accent w-full col-span-2 "
