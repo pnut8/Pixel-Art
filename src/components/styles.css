@@ -1,0 +1,38 @@
+:root {
+  --pixelCount: ;
+}
+
+.grid-container {
+  /* height: 45rem; */
+  /* width: 45rem;  */
+  background-image: url('./grid-bg.jpg');
+}
+
+.grid-row {
+  display: grid; 
+  grid-template-columns: repeat(var(--pixelCount), auto); 
+  grid-template-rows: repeat(var(--pixelCount), auto); 
+  gap: 0px;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  height: 100%;
+  margin: 0;
+  }
+
+.grid-item {
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+#color-picker {
+    margin: 10px;
+}
+
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
