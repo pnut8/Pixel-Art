@@ -20,7 +20,7 @@ export function Grid() {
   let gridCount = rangeVal * rangeVal;
   const [imgData] = useState([]);
   const checkbox = useRef(null);
-  const [name, setName] = useState("MyDrawing");
+  const [name, setName] = useState("My Drawing");
   // const [dnFlag, setDnFlag] = useState(0);
   let copy;
   let j,
